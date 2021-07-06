@@ -1,7 +1,7 @@
 ## Description
 
 Purpose of this repository is to provide some sample code, which is supposed to be reviewed during an interview for a .NET developer position.
-The provided solution implements the rate-limiting task described below, while having some possibly controversial decisions. It's required to make a code review like it's a production code ready to be merged.
+The provided solution implements the rate-limiting task described below, while having some possibly controversial decisions. It's required to make a code review like it's a production code ready to be merged, so approach this the same way you do it usually at work.
 
 ### Task
 
