@@ -6,11 +6,15 @@ namespace RateLimiter
 {
     public class DatabaseStore : IDatabaseStore
     {
-        private static ConcurrentDictionary<string, IEnumerable<IUserData>> store = new ConcurrentDictionary<string, IEnumerable<IUserData>>();
+        private static ConcurrentDictionary<string, IEnumerable<IUserData>> store = 
+	        new ConcurrentDictionary<string, IEnumerable<IUserData>>();
 
-        public void Update(string userToken, IEnumerable<IUserData> value, IEnumerable<IUserData> companisonValue)
+        public void Update(
+	        string userToken, 
+	        IEnumerable<IUserData> value, 
+	        IEnumerable<IUserData> comparisonValue)
         {
-            store.TryUpdate(userToken, value, companisonValue);
+            store.TryUpdate(userToken, value, comparisonValue);
         }
 
         public void Add(string userToken, IEnumerable<IUserData> value)

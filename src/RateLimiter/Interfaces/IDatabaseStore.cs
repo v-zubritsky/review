@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace RateLimiter.Interfaces
 {
@@ -10,7 +6,10 @@ namespace RateLimiter.Interfaces
     {
         void Add(string userToken, IEnumerable<IUserData> value);
 
-        void Update(string userToken, IEnumerable<IUserData> value, IEnumerable<IUserData> companisonValue);
+        void Update(
+	        string userToken, 
+	        IEnumerable<IUserData> value, 
+	        IEnumerable<IUserData> comparisonValue);
 
         IEnumerable<IUserData> Get(string userToken);
     }

@@ -19,5 +19,3 @@ The goal is to design a class(-es) that manage rate limits for every provided AP
 Use simple in-memory data structures to store the data; don't rely on a particular database. Do not prepare any complex environment,
 a class library with a set of tests is more than enough. Don't worry about the API itself, including auth token generation - there is no real API environment required.
 For simplicity, you can implement the API resource as a simple C# method accepting a user token, and at the very beginning of the method, you set up your classes and ask whether further execution is allowed for this particular callee.
-
-There is a Test Project set up for you to use. You are welcome to create your own test project and use whatever test runner you would like. If you used the existing Test Project, we use NUnit as a test framework so you should install [NUnit Adapter for VS](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter).
